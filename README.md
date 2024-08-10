@@ -14,13 +14,13 @@ including Selenium and Beautiful Soup.
   - `date change`: Number of days changed during the flight according to local time of departure and arrival.
   - `departure airport`: IATA code of the departure airport.
   - `arrival airport`: IATA code of the arrival airport.
-  - `price`: Ticket price in the CAD.
+  - `price`: Ticket price in the CAD. Within the same departure day, each row is sorted in ascending order according to price.
   - `airline`: List of airlines operating the flight, converted to IATA codes, possible to represent same airline 
 multiple times. Airlines will be present as what is on the html of the web page with only their names abbreviated.
   - `airline count`: Number of distinct airlines operating the flight.
   - `stop airport`: IATA code of the stop airport (if applicable, possible to be NA).
   - `stop count`: Number of stops during the flight.
   - `overhead bin access`: 1 if access to the overhead bin is available, 0 if not.
-  - `day`: Index of the day in the week (1 for Monday, 2 for Tuesday, and so on).
+  - `day`: Index of the day in the week (1 for Monday, 2 for Tuesday, and so on). The dataset is arranged in ascending order according to day value.
 
 

@@ -182,9 +182,6 @@ with open(csv_filename, mode='a', newline="") as file:
         bin_info = []
         for i in range(0, len(bin_access), 3):
             bin_info.append(bin_access[i])
-
-        print(len(unique_prices), len(airline_list), len(stop_info), len(airport_arrive))
-
         # both departure time and arrival time are based on local time
 
         summation = []
@@ -197,7 +194,6 @@ with open(csv_filename, mode='a', newline="") as file:
         sorted_summation = sorted(summation, key=lambda x: x[5])
 
         for row in sorted_summation:
-            print(row)
             writer.writerow(row)
 
     driver.quit()
